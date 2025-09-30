@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    width: 120px;
+    height: 40px;
+}
+
+button {
+    border: 1px solid #2A2A2A;
+    font-size: 0.8rem;
+    padding: 15px 35px;
+}
+
+ul {
+    list-style: "-";
+    list-style-position: inside;
+}
+
+
+#main-visual {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 80px;
+}
+
+#main-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#main-visual .logo {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+
+.wrapper {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto 80px auto;
+    padding: 0 5%;
+}
+
+.no-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.sec-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #24292e;
+}
+
+.wrapper .text p,
+.no-wrapper .text p {
+    width: 500px;
+    margin: 0 auto 40px auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex .img-wrapper {
+    position: relative;
+    width: 49%;
+    aspect-ratio: 1;
+}
+
+.flex .img-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.flex .img-wrapper .label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 290px;
+    transform: translate(-50%, -50%);
+    padding: 10px 15px;
+    background: #70707080;
+    color: #fff;
+    z-index: 2;
+}
+
+
+#fashion {
+    height: 520px;
+    background: url(../img/fashion.jpg);
+    background-position: center;
+}
+
+
+article {
+    background: #F5F5F5;
+    padding: 60px 0;
+}
+
+article .wrapper {
+    justify-content: center;
+}
+
+article .wrapper:last-child {
+    margin-bottom: 0;
+}
+
+article .wrapper:nth-child(2n) .flex {
+    flex-direction: row-reverse;
+}
+
+article .wrapper img {
+    width: 50%;
+    max-width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+article .wrapper .text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+
+#footer {
+    padding: 100px 0;
+    background: #333;
+    color: #fff;
+}
+
+#footer .wrapper {
+    margin-bottom: 0;
+}
+
+#footer .wrapper .flex div {
+    width: calc(100% / 3);
+    text-align: left;
+}
+
+#footer .logo {
+    margin: auto;
+}
